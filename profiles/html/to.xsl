@@ -227,7 +227,7 @@
                   <xsl:text>[&#xA;</xsl:text>
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Priimek -->
@@ -275,7 +275,7 @@
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Faksimile -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;',@facs,'\&quot;&gt;','ANNO','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;',@facs,'\&quot; target=\&quot;_blank\&quot;&gt;','ANNO','&lt;/a&gt;&quot;')"/>
                   <xsl:text>&#xA;</xsl:text>
                   
                   <xsl:text>]</xsl:text>
@@ -364,7 +364,7 @@
                   <xsl:text>[&#xA;</xsl:text>
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Priimek -->
@@ -526,7 +526,7 @@
                   <xsl:text>[&#xA;</xsl:text>
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Priimek -->
@@ -605,7 +605,7 @@
                   <xsl:for-each select="$dogodki/html:dogodek">
                      <xsl:value-of select="."/>
                      <xsl:if test="position() != last()">
-                        <xsl:text> | </xsl:text>
+                        <xsl:text>, </xsl:text>
                      </xsl:if>
                   </xsl:for-each>
                   <xsl:text>&quot;</xsl:text>
@@ -695,7 +695,7 @@
                   <xsl:text>[&#xA;</xsl:text>
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Priimek -->
@@ -813,7 +813,7 @@
                   <xsl:text>[&#xA;</xsl:text>
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Priimek -->
@@ -932,7 +932,7 @@
                   <xsl:text>[&#xA;</xsl:text>
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; t=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Priimek -->
@@ -1153,7 +1153,7 @@
                   <xsl:for-each select="$dogodki/html:dogodek">
                      <xsl:value-of select="."/>
                      <xsl:if test="position() != last()">
-                        <xsl:text> | </xsl:text>
+                        <xsl:text>, </xsl:text>
                      </xsl:if>
                   </xsl:for-each>
                   <xsl:text>&quot;,&#xA;</xsl:text>
@@ -1205,11 +1205,11 @@
                   <!-- Dvojnik (sameAs) -->
                   
                   <!-- Prepis -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;', ancestor::tei:div[@type='chapter']/@xml:id,'.html#',@xml:id,'\&quot; target=\&quot;_blank\&quot;&gt;','ID','&lt;/a&gt;&quot;')"/>
                   <xsl:text>,&#xA;</xsl:text>
                   
                   <!-- Faksimile -->
-                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;',@facs,'\&quot;&gt;','ANNO','&lt;/a&gt;&quot;')"/>
+                  <xsl:value-of select="concat('&quot;&lt;a href=\&quot;',@facs,'\&quot; target=\&quot;_blank\&quot;&gt;','ANNO','&lt;/a&gt;&quot;')"/>
                   <xsl:text>&#xA;</xsl:text>
                   
                   <xsl:text>]</xsl:text>
